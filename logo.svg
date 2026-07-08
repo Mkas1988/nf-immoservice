@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 200" role="img" aria-label="NF Immoservice Logo">
+  <rect width="240" height="200" fill="#F7F5F1"/>
+  <polygon points="45,78 120,26 120,44 60,88" fill="#23272E"/>
+  <polygon points="120,26 195,80 195,98 120,44" fill="#E8722C"/>
+  <text x="120" y="132" text-anchor="middle" font-family="Manrope, Arial, Helvetica, sans-serif" font-size="64" font-weight="800" fill="#23272E">NF</text>
+  <text x="120" y="172" text-anchor="middle" font-family="Manrope, Arial, Helvetica, sans-serif" font-size="21" font-weight="700" letter-spacing="7" fill="#23272E">IMMOSERVICE</text>
+</svg>

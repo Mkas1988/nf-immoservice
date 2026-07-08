@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <rect width="64" height="64" rx="12" fill="#F7F5F1"/>
+  <polygon points="8,30 34,11 34,18.5 13,34" fill="#23272E"/>
+  <polygon points="34,11 56,27 56,34.5 34,18.5" fill="#E8722C"/>
+  <text x="32" y="54" text-anchor="middle" font-family="Manrope, Arial, Helvetica, sans-serif" font-size="26" font-weight="800" fill="#23272E">NF</text>
+</svg>
