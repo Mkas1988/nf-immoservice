@@ -15,9 +15,11 @@
 
    Leere Werte ('') = Funktion bleibt ausgeblendet bzw. Mail-Fallback aktiv.
 */
+/* ACHTUNG: phone und whatsapp sind aktuell MUSTERDATEN – vor der
+   offiziellen Bewerbung der Seite durch die echten Nummern ersetzen! */
 const NF_CONFIG = {
-    phone: '',
-    whatsapp: '',
+    phone: '+49 201 12345678',
+    whatsapp: '4915112345678',
     formspree: ''
 };
 
