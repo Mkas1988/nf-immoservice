@@ -23,7 +23,13 @@
             </svg>
             <h1>4<span class="accent">0</span>4</h1>
             <p>Diese Seite wurde nicht gefunden – aber wir helfen Ihnen gerne weiter.</p>
-            <a href="/" class="btn btn-primary">Zur Startseite</a>
+            <a href="/" class="btn btn-primary" id="homeLink">Zur Startseite</a>
+            <script>
+                // Auf GitHub Pages (Projektseite) liegt die Startseite unter /<repo>/
+                if (location.hostname.endsWith('github.io')) {
+                    document.getElementById('homeLink').href = '/' + location.pathname.split('/')[1] + '/';
+                }
+            </script>
         </div>
     </main>
 </body>
