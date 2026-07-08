@@ -961,6 +961,203 @@ h3 { font-size: 1.2rem; }
     margin: 18px 0;
 }
 
+/* ---------- Unterseiten: Page-Hero & Breadcrumb ---------- */
+
+.page-hero {
+    padding: calc(var(--header-h) + 56px) 0 56px;
+    background: var(--white);
+    border-bottom: 1px solid var(--line);
+}
+
+.page-hero h1 { font-size: clamp(2rem, 4.4vw, 3rem); margin-bottom: 18px; max-width: 20ch; }
+
+.page-hero .lead { max-width: 60ch; }
+
+.breadcrumb {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    font-size: 0.88rem;
+    font-weight: 600;
+    color: var(--muted);
+    margin-bottom: 22px;
+}
+
+.breadcrumb a { color: var(--muted); text-decoration: none; }
+.breadcrumb a:hover { color: var(--orange-dark); }
+.breadcrumb li + li::before { content: "›"; margin-right: 8px; color: var(--line); }
+.breadcrumb [aria-current] { color: var(--orange-dark); }
+
+/* ---------- CTA-Banner ---------- */
+
+.cta-banner {
+    background: var(--ink);
+    border-radius: var(--radius);
+    padding: 48px 44px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+}
+
+.cta-banner h2 { color: var(--white); font-size: clamp(1.4rem, 2.6vw, 1.9rem); margin-bottom: 8px; }
+
+.cta-banner p { color: rgba(247, 245, 241, 0.75); max-width: 48ch; }
+
+/* ---------- Verwandte Leistungen ---------- */
+
+.related { padding: 88px 0; background: var(--paper); }
+
+.related-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.related-card {
+    background: var(--white);
+    border: 1px solid var(--line);
+    border-radius: var(--radius);
+    padding: 26px 24px;
+    text-decoration: none;
+    transition: transform 0.22s ease, box-shadow 0.22s ease;
+}
+
+.related-card:hover { transform: translateY(-4px); box-shadow: var(--shadow); }
+
+.related-card h3 { margin-bottom: 8px; font-size: 1.08rem; }
+
+.related-card p { color: var(--muted); font-size: 0.92rem; margin-bottom: 14px; }
+
+/* ---------- Projektgalerie ---------- */
+
+.gallery-filter {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 34px;
+}
+
+.gallery-filter button {
+    font-family: inherit;
+    font-size: 0.92rem;
+    font-weight: 700;
+    padding: 10px 20px;
+    border-radius: 999px;
+    border: 1.5px solid var(--line);
+    background: var(--white);
+    color: var(--ink-soft);
+    cursor: pointer;
+    transition: background 0.18s ease, color 0.18s ease, border-color 0.18s ease;
+}
+
+.gallery-filter button:hover { border-color: var(--orange); color: var(--orange-dark); }
+
+.gallery-filter button.active {
+    background: var(--ink);
+    border-color: var(--ink);
+    color: var(--white);
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+}
+
+.gallery-item {
+    background: var(--white);
+    border: 1px solid var(--line);
+    border-radius: var(--radius);
+    overflow: hidden;
+    transition: transform 0.22s ease, box-shadow 0.22s ease;
+}
+
+.gallery-item:hover { transform: translateY(-4px); box-shadow: var(--shadow-lg); }
+
+.gallery-item img { width: 100%; aspect-ratio: 4 / 3; object-fit: cover; }
+
+.gallery-item figcaption { padding: 16px 20px 18px; }
+
+.gallery-item figcaption strong { display: block; font-size: 1rem; margin-bottom: 2px; }
+
+.gallery-item figcaption span { font-size: 0.86rem; color: var(--muted); }
+
+.gallery-tag {
+    display: inline-block;
+    font-size: 0.72rem;
+    font-weight: 800;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--orange-dark);
+    margin-bottom: 8px;
+}
+
+/* ---------- Projekte-Teaser (Startseite) ---------- */
+
+.projects-teaser { padding: 96px 0; background: var(--paper); }
+
+.projects-teaser-inner {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 28px;
+}
+
+/* ---------- Telefon & WhatsApp ---------- */
+
+.header-phone {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-weight: 800;
+    font-size: 0.95rem;
+    color: var(--ink);
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+.header-phone:hover { color: var(--orange-dark); }
+.header-phone svg { color: var(--orange); }
+
+.contact-phone {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 1.15rem;
+    font-weight: 800;
+    color: var(--white);
+    text-decoration: none;
+    border-bottom: 2px solid var(--orange);
+    padding-bottom: 4px;
+    margin-bottom: 18px;
+    transition: color 0.2s ease;
+}
+
+.contact-phone:hover { color: var(--orange); }
+.contact-phone svg { color: var(--orange); }
+
+.fab-whatsapp {
+    position: fixed;
+    right: 22px;
+    bottom: 22px;
+    z-index: 80;
+    width: 58px;
+    height: 58px;
+    border-radius: 50%;
+    background: #25D366;
+    color: #fff;
+    display: grid;
+    place-items: center;
+    box-shadow: 0 10px 30px rgba(37, 211, 102, 0.45);
+    transition: transform 0.2s ease;
+}
+
+.fab-whatsapp:hover { transform: scale(1.08); }
+
 /* ---------- Reveal Animationen ---------- */
 
 .reveal {
@@ -1009,8 +1206,17 @@ h3 { font-size: 1.2rem; }
     .detail { padding: 64px 0; }
 }
 
+@media (max-width: 1024px) and (min-width: 561px) {
+    .gallery-grid { grid-template-columns: repeat(2, 1fr); }
+    .related-grid { grid-template-columns: 1fr; }
+}
+
 @media (max-width: 560px) {
     .services-grid { grid-template-columns: 1fr; }
+    .gallery-grid { grid-template-columns: 1fr; }
+    .related-grid { grid-template-columns: 1fr; }
+    .cta-banner { padding: 32px 24px; }
+    .header-phone span { display: none; }
     .process-grid { grid-template-columns: 1fr; }
     .trustbar-grid { grid-template-columns: 1fr; gap: 18px; }
     .why-cards { grid-template-columns: 1fr; }
