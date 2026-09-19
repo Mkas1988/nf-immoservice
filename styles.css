@@ -69,8 +69,8 @@ section[id] { scroll-margin-top: calc(var(--header-h) + 16px); }
 
 h1, h2, h3, h4 {
     font-weight: 800;
-    line-height: 1.15;
-    letter-spacing: -0.02em;
+    line-height: 1.18;
+    letter-spacing: -0.012em;
     color: var(--ink);
 }
 
