@@ -352,6 +352,8 @@ h1, h2, h3 { font-weight: 800; letter-spacing: -0.03em; line-height: 1.04; }
 
 .tile p { color: var(--ink-dim); font-size: 0.96rem; max-width: 40ch; }
 
+.tile-wide { grid-column: 1 / -1; aspect-ratio: 21 / 8; }
+
 .tile-arrow {
     flex-shrink: 0;
     width: 58px; height: 58px; border-radius: 50%;
@@ -362,7 +364,9 @@ h1, h2, h3 { font-weight: 800; letter-spacing: -0.03em; line-height: 1.04; }
     transition: background 0.25s ease, transform 0.25s ease, color 0.25s ease;
 }
 
-.tile:hover .tile-arrow { background: var(--orange); color: #1C1207; transform: rotate(-45deg); }
+.tile:hover .tile-wide { grid-column: 1 / -1; aspect-ratio: 21 / 8; }
+
+.tile-arrow { background: var(--orange); color: #1C1207; transform: rotate(-45deg); }
 
 /* ---------- Warum (Split) ---------- */
 
@@ -588,6 +592,7 @@ h1, h2, h3 { font-weight: 800; letter-spacing: -0.03em; line-height: 1.04; }
 @media (max-width: 1024px) {
     .tiles { grid-template-columns: 1fr; }
     .tile { aspect-ratio: 16 / 10; }
+    .tile-wide { aspect-ratio: 16 / 10; }
     .steps { grid-template-columns: repeat(2, 1fr); }
     .why-grid { grid-template-columns: 1fr; gap: 60px; }
     .why-media { max-width: 460px; }
