@@ -19,9 +19,9 @@
 
     <link rel="icon" type="image/svg+xml" href="../favicon.svg">
     <link rel="apple-touch-icon" href="../apple-touch-icon.png">
-    <meta name="theme-color" content="#23272E">
+    <meta name="theme-color" content="#121418">
     <link rel="preload" href="../fonts/manrope-latin.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="../v2.css">
 
     <script type="application/ld+json">
     {
@@ -41,18 +41,19 @@
     <header class="header scrolled">
         <div class="header-inner">
             <a href="../index.html" class="brand" aria-label="NF Immoservice – zur Startseite">
-                <svg class="brand-mark" width="44" height="34" viewBox="0 0 100 62" aria-hidden="true" focusable="false">
-                    <polygon points="0,50 55,10 55,24 10,58" fill="#23272E"/>
-                    <polygon points="55,10 100,42 100,56 55,24" fill="#E8722C"/>
+                <svg width="46" height="34" viewBox="0 0 100 62" aria-hidden="true" focusable="false">
+                    <polygon points="0,50 55,10 55,24 10,58" fill="#F4F1EB"/>
+                    <polygon points="55,10 100,42 100,56 55,24" fill="#FF7A2F"/>
                 </svg>
                 <span class="brand-text">NF <em>Immoservice</em></span>
             </a>
             <nav class="nav-desktop" aria-label="Hauptnavigation">
                 <a href="../index.html#leistungen">Leistungen</a>
-                <a href="./" aria-current="page">Projekte</a>
-                <a href="../index.html#faq">FAQ</a>
+                <a href="../index.html#warum">Warum wir</a>
+                <a href="../index.html#ablauf">Ablauf</a>
+                <a href="../projekte/">Projekte</a>
                 <span data-phone-slot="header" hidden></span>
-                <a href="../index.html#kontakt" class="btn btn-primary btn-sm">Angebot anfragen</a>
+                <a href="../index.html#kontakt" class="btn btn-solid">Projekt anfragen</a>
             </nav>
             <button class="menu-btn" id="menuBtn" aria-label="Menü öffnen" aria-expanded="false" aria-controls="mobileMenu">
                 <span class="hamburger" aria-hidden="true"><span></span><span></span><span></span></span>
@@ -70,26 +71,26 @@
             <a href="../leistungen/sanitaer/">Sanitär</a>
             <a href="../leistungen/abrissarbeiten/">Abrissarbeiten</a>
             <a href="./" aria-current="page">Projekte</a>
-            <a href="../index.html#kontakt" class="mobile-cta">Angebot anfragen</a>
+            <a href="../index.html#kontakt" class="mobile-cta">Projekt anfragen</a>
         </nav>
     </div>
 
     <main id="main">
 
         <section class="page-hero">
-            <div class="container">
+            <div class="wrap">
                 <ol class="breadcrumb">
                     <li><a href="../index.html">Startseite</a></li>
                     <li aria-current="page">Projekte</li>
                 </ol>
-                <p class="eyebrow">Referenzen aus Essen &amp; Umgebung</p>
+                <p class="kicker">Referenzen aus Essen &amp; Umgebung</p>
                 <h1>Unsere Projekte</h1>
                 <p class="lead">Überzeugen Sie sich selbst von der Qualität unserer Arbeit. Nutzen Sie den Filter, um Referenzen aus einem bestimmten Gewerk anzusehen – die Galerie wird laufend um aktuelle Projekte ergänzt.</p>
             </div>
         </section>
 
-        <section class="detail">
-            <div class="container">
+        <section class="section">
+            <div class="wrap">
                 <div class="gallery-filter" role="group" aria-label="Projekte nach Gewerk filtern">
                     <button data-filter="alle" class="active" aria-pressed="true">Alle Projekte</button>
                     <button data-filter="bodenverlegung" aria-pressed="false">Bodenverlegung</button>
@@ -198,30 +199,30 @@
                         </figcaption>
                     </figure>
                 </div>
+                </div>
             </div>
         </section>
 
-        <section class="detail detail-alt">
-            <div class="container">
-                <div class="cta-banner">
-                    <div>
-                        <h2>Ihr Projekt könnte das nächste sein</h2>
-                        <p>Beschreiben Sie uns Ihr Vorhaben – wir melden uns mit einer ehrlichen Einschätzung und einem transparenten Angebot.</p>
-                    </div>
-                    <a href="../index.html#kontakt" class="btn btn-primary">Unverbindlich anfragen</a>
+        <section class="section" style="padding-top: 0;">
+            <div class="wrap">
+                <div class="strip" data-reveal>
+                    <p class="kicker">Kontakt</p>
+                    <h2 class="h2">Ihr Projekt könnte das nächste sein</h2>
+                    <p>Beschreiben Sie uns Ihr Vorhaben – wir melden uns mit einer ehrlichen Einschätzung und einem transparenten Angebot.</p>
+                    <a href="../index.html#kontakt" class="btn btn-solid">Unverbindlich anfragen <span class="arr" aria-hidden="true">→</span></a>
                 </div>
             </div>
         </section>
     </main>
 
     <footer class="footer">
-        <div class="container">
+        <div class="wrap">
             <div class="footer-grid">
-                <div class="footer-col footer-brand">
-                    <a href="../index.html" class="brand brand-light" aria-label="NF Immoservice – zur Startseite">
-                        <svg class="brand-mark" width="44" height="34" viewBox="0 0 100 62" aria-hidden="true" focusable="false">
-                            <polygon points="0,50 55,10 55,24 10,58" fill="#F7F5F1"/>
-                            <polygon points="55,10 100,42 100,56 55,24" fill="#E8722C"/>
+                <div>
+                    <a href="../index.html" class="brand" aria-label="NF Immoservice – zur Startseite">
+                        <svg width="46" height="34" viewBox="0 0 100 62" aria-hidden="true" focusable="false">
+                            <polygon points="0,50 55,10 55,24 10,58" fill="#F4F1EB"/>
+                            <polygon points="55,10 100,42 100,56 55,24" fill="#FF7A2F"/>
                         </svg>
                         <span class="brand-text">NF <em>Immoservice</em></span>
                     </a>
@@ -241,19 +242,18 @@
                 <div class="footer-col">
                     <h4>Unternehmen</h4>
                     <ul>
-                        <li><a href="./">Projekte</a></li>
+                        <li><a href="../projekte/">Projekte</a></li>
                         <li><a href="../index.html#ablauf">So arbeiten wir</a></li>
-                        <li><a href="../index.html#faq">Häufige Fragen</a></li>
                         <li><a href="../index.html#kontakt">Kontakt</a></li>
                     </ul>
                 </div>
                 <div class="footer-col">
                     <h4>Kontakt</h4>
-                    <address>
-                        NF Immoservice GmbH<br>
-                        Meisterbetrieb · Essen<br><br>
-                        <a href="mailto:info@nf-immoservice.de">info@nf-immoservice.de</a>
-                    </address>
+                    <ul>
+                        <li>NF Immoservice GmbH</li>
+                        <li>Meisterbetrieb · Essen</li>
+                        <li><a href="mailto:info@nf-immoservice.de">info@nf-immoservice.de</a></li>
+                    </ul>
                 </div>
             </div>
             <div class="footer-bottom">
