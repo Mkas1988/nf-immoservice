@@ -78,7 +78,8 @@ const NF_CONFIG = {
     }
 
     /* ---------- Einblend-Animationen ---------- */
-    if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches && 'IntersectionObserver' in window) {
+    const reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    if (!reduced && 'IntersectionObserver' in window) {
         const revealEls = document.querySelectorAll('.service-card, .detail-grid, .process-step, .why-card, .trust-item, .faq-item, .gallery-item, .related-card');
         revealEls.forEach(el => el.classList.add('reveal'));
         const io = new IntersectionObserver(entries => {
@@ -90,6 +91,21 @@ const NF_CONFIG = {
             });
         }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
         revealEls.forEach(el => io.observe(el));
+    }
+
+    /* ---------- V2: [data-reveal]-Animationen ---------- */
+    const dataRevealEls = document.querySelectorAll('[data-reveal]');
+    if (dataRevealEls.length) {
+        if (reduced || !('IntersectionObserver' in window)) {
+            dataRevealEls.forEach(el => el.classList.add('in'));
+        } else {
+            const io2 = new IntersectionObserver(entries => {
+                entries.forEach(e => {
+                    if (e.isIntersecting) { e.target.classList.add('in'); io2.unobserve(e.target); }
+                });
+            }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+            dataRevealEls.forEach(el => io2.observe(el));
+        }
     }
 
     /* ---------- Projektgalerie-Filter ---------- */
